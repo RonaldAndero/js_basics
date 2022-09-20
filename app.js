@@ -1,60 +1,56 @@
-/*
-// vars
-let name = "Ronald Andero"
+let val
 
-// const
-const surname = "Õisman"
+// number -> String
+val = String(555)
+val = String(4+4)
+val = String(5.8)
 
-*/
+// boolean -> String
+val = String(true)
+val = String(false)
+
+// object -> String
+val = String(new Date())
 
 
-/*// objects
-const person = {
-    firstname: "Ronald Andero",
-    surname: "Õisman"
-}
-*!/*/
+console.log(val)
 
-// data types
-// string
-let name = "Ronald Andero"
-console.log(name)
-console.log(typeof name)
+// null -> String
+val = String(null)
+console.log(val)
 
-let goodMark = 5
-console.log(goodMark)
-console.log(typeof goodMark)
+// array -> String
+val = String([1, 2, 3, 4, 5])
+console.log(val)
 
-let persent = 50.3
-console.log(persent)
-console.log(typeof persent)
+// undefined -> string
+val = String(undefined)
+console.log(val)
 
-let isHere = true
-console.log(isHere)
-console.log(typeof isHere)
+// toString()
+val = (true).toString()
+console.log(val)
 
-const numbers = [1, 2, 3, 4, 5]
-console.log(numbers)
-console.log(typeof numbers)
+// string -> number
+val = Number("5")
+console.log(val)
 
-const person = {
-    firstname: "Ronald Andero",
-    surname: "Õisman"
-}
-console.log(person)
-console.log(typeof person)
+// boolean -> number
+val = Number(true)
 
-// null
-const airplane = null
-console.log(airplane)
-console.log(typeof airplane)
+// null -> number
+val = Number(null)
+console.log(val)
 
-// symbol
-const sym = Symbol()
-console.log(sym)
-console.log(typeof sym)
+// string -> number
+val = Number("Test")
+console.log(val)
 
-// undefined
-let test
-console.log(test)
-console.log(typeof test)
+// array -> number
+val = Number([1, 2, 3])
+console.log(val)
+
+// string -> int
+val = parseInt("100.3")
+console.log(val)
+
