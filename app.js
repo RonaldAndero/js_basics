@@ -1,27 +1,25 @@
-const firstname = "ronald Andero"
-const surname = "õisman"
+const firstname = "Ronald Andero"
+const surname = "Õisman"
+const email = "ronald-andero.oisman@voco.ee"
+const department = "IKT"
 
-let val = firstname + " " + surname
+let result = "<ul>" +
+    "<li>" + firstname + "</li>" +
+    "<li>" + surname + "</li>" +
+    "<li>" + email + "</li>" +
+    "<li>" + department + "</li>" +
+    "</ul>"
 
-val = "ronald"
-val += surname
-
-val = firstname.toUpperCase()
-val = surname.toLowerCase()
-
-val = surname[0]
-val = surname.indexOf("a")
-
-val = surname.charAt(2)
-val = surname.charAt(surname.length - 1)
-
-val = surname.substring(0, 4)
-val = surname.slice(0, 4)
-val = surname.slice(-3)
-
-const tags = "JS, HTML, CSS"
-val = tags.split(",")
+result = `
+    <ul>
+        <li>Name: ${firstname}</li>
+        <li>Surname: ${surname}</li>
+        <li>Email: ${email}</li>
+        <li>Department: ${department}</li>
+    </ul>\`
+`
 
 
 
-console.log(val[1].trim())
+console.log(result)
+document.body.innerHTML = result
