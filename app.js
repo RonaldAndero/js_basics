@@ -16,7 +16,7 @@ result = `
         <li>Surname: ${surname}</li>
         <li>Email: ${email}</li>
         <li>Department: ${department}</li>
-    </ul>\`
+    </ul>
 `
 
 
