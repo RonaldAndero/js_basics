@@ -1,15 +1,50 @@
-const today = new Date()
+/*
+if(condition) {
+    //if statements
+} else {
+    // else statements
+}
 
-let val
-val = today
-val = today.getMonth()
-val = today.getDay()
-val = today.getFullYear()
+ == equal -> ===
+ != not equal -> !==
+ */
 
-val = new Date("09/22/2021")
-val = new Date("September 23 2022")
+let personID;
 
-val = new Date()
-val.setDate(23)
+if(typeof personID === 'undefined'){
+    console.log("id is not correct")
+} else{
+    console.log('id is ${personID}')
+}
 
-console.log(val)
+console.log(personID)
+
+
+const color = 'green'
+if(color === 'red'){
+    console.log('Stop')
+} else if(color === 'yellow'){
+    console.log('Attension')
+} else if(color === 'green') {
+    console.log('Go')
+} else {
+    console.log('not allowed')
+}
+
+/*
+condition1 && condition2 - and
+condition1 // condition2 - or
+ */
+
+const name = 'kadi'
+const age = 40
+
+if(age > 0 && age <= 12){
+    console.log('${name} on laps')
+} else if(age > 12 && age < 18){
+    console.log('${name} on nooruk')
+} else {
+    console.log('${name} on nooruk')
+}
+
+// ? - ternary
